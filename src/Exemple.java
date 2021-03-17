@@ -12,6 +12,9 @@ public class Exemple {
         System.out.println(maList.get(2));
         maList.sort(Exemple::compare);
         maList.forEach(Exemple::doSomethingWithNumber);
+        maList.forEach(number -> {
+            System.out.println(number);
+        });
         System.out.println(maList.indexOf(1));
         System.out.println(maList.stream().filter(Exemple::keepPos).collect(Collectors.toList()));
 
