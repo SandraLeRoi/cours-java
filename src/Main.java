@@ -1,5 +1,6 @@
 import java.nio.file.StandardCopyOption;
 import java.sql.SQLOutput;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -18,7 +19,10 @@ public class Main {
 //        String maChaine = "bidule";
 //
 //        int[] monTableau = {1, 5, 9, 50};
-//        int[][] monAutreTableau = {{1,2}, {5,8}, {9, 50}};
+//        int[][] monAutreTableau = {
+//        {1,2},
+//        {5,8},
+//        {9, 50}};
 //
 //        int[] monTableau2 = new int[10]; // créer un tableau vide de 10 éléments
 //
@@ -38,7 +42,12 @@ public class Main {
 //        System.out.println("Tapez un nombre");
 //        int input = scann.nextInt();
 //        System.out.println("votre nombre : " + input);
-
+        int[] tableau = {50,89,6985,123,68,4,456};
+        Calculatrice calculatrice = new Calculatrice();
+        System.out.println(calculatrice.average(tableau));
+        System.out.println(calculatrice.max(tableau));
+        System.out.println(Arrays.toString(tableau));
+        System.out.println(Arrays.toString(calculatrice.sort(tableau)));
 
     }
 
