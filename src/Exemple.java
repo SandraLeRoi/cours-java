@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class Exemple {
@@ -17,7 +19,11 @@ public class Exemple {
         });
         System.out.println(maList.indexOf(1));
         System.out.println(maList.stream().filter(Exemple::keepPos).collect(Collectors.toList()));
+        maList.stream().map(number -> number * 2);
 
+        Integer[] monTableau = {1,2,3,4,5,6};
+        List<Integer> newList = Arrays.asList((monTableau));
+        Integer[] monNouveauTableau =  newList.toArray(new  Integer[newList.size()]);
     }
 
     static int compare(int a, int b) {
